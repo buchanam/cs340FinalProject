@@ -1,0 +1,29 @@
+.game_text
+{
+    text-align: left;
+    padding-left: 40px;
+    padding-top: 10px;
+    color: white;
+}
+
+.checked {
+    color: orange;
+  }
+
+#game_title
+{
+    font-size: 30px;
+}
+
+#game_pub
+{
+    font-size: 20px;
+}
+
+#game_img
+{
+    width: 300px;
+    height: auto;
+    margin-top: 5%;
+}
+
