@@ -1,3 +1,20 @@
+/**
+  Imported Fonts
+**/
+
+@font-face {
+  font-family: HawkFront;
+  src: url(fonts/hawkeye_front.ttf);
+}
+
+@font-face {
+  font-family: HawkBack;
+  src: url(fonts/hawkeye_back.ttf);
+}
+
+/**
+  Classes
+**/
 
 .backdrop 
 {
@@ -5,16 +22,29 @@
   text-align: center;
 }
 
-/* #spacer
+.title
 {
-  height: 10%;
-  background-color: rgba(192, 192, 192, 0.0);
-} */
+  text-align: center;
+  font-size: 52px;
+}
+
+.menu_link
+{
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 25px;
+  max-height: 100px;
+}
+
+/**
+  IDs
+**/
 
 #nav_bar
 {
   margin-top: 5%;
   color: white;
+  max-height: 100px;
 }
 
 #main
@@ -22,4 +52,35 @@
   background: url(images/concrete_wall.png);
   background-repeat: repeat;
   height: 100%;
+}
+
+#front_t
+{
+  color: white;
+  font-family: HawkFront;
+  text-align: center;
+  margin-top: -82px;
+}
+
+#back_t
+{
+  color: black;
+  font-family: HawkBack;
+  text-align: center;
+}
+
+#display
+{
+  margin-left: 60px;
+  margin-right: 60px;
+  height: 400px;
+  margin-top: 70px;
+}
+
+#search
+{
+  margin-top: 60px;
+  margin-right: 60px;
+  margin-left: 60px;
+  height: 60px;
 }
