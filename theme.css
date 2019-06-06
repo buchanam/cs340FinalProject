@@ -12,6 +12,11 @@
   src: url(fonts/hawkeye_back.ttf);
 }
 
+@font-face {
+  font-family: ForcedSquare;
+  src: url(fonts/FORCEDSQUARE.ttf);
+}
+
 /**
   Classes
 **/
@@ -79,8 +84,40 @@
 
 #search
 {
-  margin-top: 60px;
+  margin-top: 0px;
   margin-right: 60px;
   margin-left: 60px;
   height: 60px;
+}
+
+#searchText
+{
+  height: 50px;
+  margin-top: 40px;
+}
+
+#search_t
+{
+  font-family: ForcedSquare;
+  color: white;
+  text-align: center;
+  font-size: 30px;
+}
+
+#glass
+{
+  width: 30px;
+  height: auto;
+  margin-top: 4%;
+}
+
+#search_field
+{
+  background-color: rgba(192, 192, 192, 0.0);
+  text-decoration: none;
+  border: none;
+  width: 100%;
+  height: 80%;
+  margin-left: -40%;
+  font-size: 20px;
 }
