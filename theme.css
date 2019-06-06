@@ -1,0 +1,25 @@
+
+.backdrop 
+{
+  background-color: rgba(192, 192, 192, 0.4);
+  text-align: center;
+}
+
+/* #spacer
+{
+  height: 10%;
+  background-color: rgba(192, 192, 192, 0.0);
+} */
+
+#nav_bar
+{
+  margin-top: 5%;
+  color: white;
+}
+
+#main
+{
+  background: url(images/concrete_wall.png);
+  background-repeat: repeat;
+  height: 100%;
+}
