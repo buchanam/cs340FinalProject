@@ -73,6 +73,27 @@ app.get('/search', (request, response) => {
 	  });
 })
 
+app.get('/home', (request, response) => {
+	con.connect(function(err) {
+ 	con.query("SELECT * FROM popularGames" , function (err, result, fields) {
+	response.json(JSON.stringify(result));
+  });
+	  });
+})
+
+app.get('/buyGame', (request, response) => {
+	var title = request.query.title;
+	var pub_date = request.query.pdate;
+	var customer = request.query.cid;
+	var user_rating = request.query.urate;
+	var storeID = request.query.sid;
+	con.connect(function(err) {
+ 	con.query("call purchaseGame(?,?,?,?,?)" ,[title, pub_date, customer, user_rating, storeID], function (err, result, fields) {
+	response.json(JSON.stringify(result));
+  });
+	  });
+})
+
 app.listen(port, (err) => {
 	  if (err) {
 		      return console.log('something bad happened', err)
